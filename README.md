@@ -1,7 +1,7 @@
 Erlang Architecture Behaviours
 ------------------------------
 
-These are sample implementations of architectural patterns in Erlang.
+This project contains a number of sample implementations of architectural patterns in Erlang.
 
 Implemented behaviours/architectures so far:
 
