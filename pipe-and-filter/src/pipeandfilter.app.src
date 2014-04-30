@@ -1,0 +1,20 @@
+{application, pipeandfilter,
+ [
+  {description, "Behaviour for pipe and filter architecture."},
+  {vsn, "0.1"},
+  {modules, [
+		gen_pipe,
+		gen_filter,
+		pipe_and_filter,
+		sample_pipe,
+		sample_filter
+	    ]},
+  {registered, [
+                pipeandfilter
+	       ]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
