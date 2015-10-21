@@ -14,7 +14,7 @@ all: deps compile dialyzer test
 # Rules to build the system
 # =============================================================================
 
-deps: $(REBAR)
+deps:
 	@$(REBAR) get-deps
 	@$(REBAR) compile
 
