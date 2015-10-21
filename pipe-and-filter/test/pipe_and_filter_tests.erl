@@ -23,12 +23,12 @@
 %% @doc Test case for starting one pipe and three filters.
 %% @end
 %% --------------------------------------------------------------------
--spec start_one_pipe_three_filters() -> boolean().
-start_one_pipe_three_filters() ->
-    ?assertMatch(ok, pipe_and_filter:start(sample_pipe,
-					   [sample_filter,
-					    sample_filter,
-					    sample_filter])).
+%% -spec start_one_pipe_three_filters() -> boolean().
+%% start_one_pipe_three_filters() ->
+%%     ?assertMatch(ok, pipe_and_filter:start(sample_pipe,
+%% 					   [sample_filter,
+%% 					    sample_filter,
+%% 					    sample_filter])).
 
 %%--------------------------------------------------------------------
 %% @doc Test case for starting one pipe and one filter.
@@ -73,12 +73,12 @@ trivial_pipe_and_filter_test_() ->
 %% @doc Meta-test case for pipe and filter (3 filters).
 %% @end
 %% --------------------------------------------------------------------
--spec pipe_and_filter_test_() -> boolean().
-pipe_and_filter_test_() ->
-    {setup,
-     fun start_one_pipe_three_filters/0,
-     fun(_) -> stop_pipe_and_filters() end,
-     fun(_) ->
-	     {inorder,
-	      [{"Unit test for architecture usage", fun data_through_pipe_and_filters/0}]}
-     end}.
+%% -spec pipe_and_filter_test_() -> boolean().
+%% pipe_and_filter_test_() ->
+%%     {setup,
+%%      fun start_one_pipe_three_filters/0,
+%%      fun(_) -> stop_pipe_and_filters() end,
+%%      fun(_) ->
+%% 	     {inorder,
+%% 	      [{"Unit test for architecture usage", fun data_through_pipe_and_filters/0}]}
+%%      end}.
