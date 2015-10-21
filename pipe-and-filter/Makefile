@@ -8,7 +8,8 @@ DEPS=erts kernel stdlib
 
 .PHONY: all compile doc clean test dialyzer typer shell distclean update-deps rebuild
 
-all: deps compile dialyzer test
+#all: deps compile dialyzer test # dialyzer is broken in 17.3 (fixed, rollout comming up)
+all: deps compile test
 
 # =============================================================================
 # Rules to build the system
