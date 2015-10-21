@@ -26,7 +26,7 @@
 %%      of the gen_filter behaviour.
 %% @end
 %% --------------------------------------------------------------------
--spec init(FilterList :: nonempty_list(tuple(module()))) -> ok.
+-spec init(FilterList :: nonempty_list({module()})) -> ok.
 init(FilterList) ->
     PidList = [ spawn(Filter, init, []) || Filter <- FilterList],
     true = register(pipeandfilter, hd(PidList)),

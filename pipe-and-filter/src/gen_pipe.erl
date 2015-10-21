@@ -17,4 +17,4 @@
 %%%-------------------------------------------------------------------
 -module(gen_pipe).
 
--callback init(FilterList :: nonempty_list(tuple(module()))) -> ok.
+-callback init(FilterList :: nonempty_list({module()})) -> ok.

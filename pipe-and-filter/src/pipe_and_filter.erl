@@ -27,7 +27,7 @@
 %% @end
 %% --------------------------------------------------------------------
 -spec start(Pipe :: module(),
-	    FilterConfig :: list(tuple(Filter :: module(), Args :: list(term())))) -> ok.
+	    FilterConfig :: list({Filter :: module(), Args :: list(term())})) -> ok.
 start(PipeModule, FilterList) ->
     PipeModule:init(FilterList).
 
