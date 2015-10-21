@@ -1,8 +1,7 @@
 ERL = $(shell which erl)
 ERLFLAGS= -pa $(CURDIR)/.eunit -pa $(CURDIR)/ebin -pa $(CURDIR)/deps/*/ebin
 
-REBAR_DIR := /local/scratch/sw/rebar
-REBAR := $(REBAR_DIR)/rebar
+REBAR := rebar
 
 DEPS_PLT=$(CURDIR)/.deps_plt
 DEPS=erts kernel stdlib
