@@ -15,4 +15,5 @@ Behaviours/architectures to be implemented:
 
 * Master-slave
 * Peer-to-peer
+* Others (TBD)
 
